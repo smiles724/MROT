@@ -1,7 +1,7 @@
 # Molecular Regression Optimal Transport (MROT)
 This is the repository for <em>Improving Molecular Representation Learning with Metric Learning-enhanced Optimal Transport [[arXiv](https://arxiv.org/abs/2202.06208)].</em>  
 We design an optimal-transport based algorithm to tackle the regression tasks in the molecular representation learning and 
-improve the generalization capability of deep learning models. This work will be published at *Patterns*. 
+improve the generalization capability of deep learning models. This work is published at [*Patterns*](https://www.sciencedirect.com/science/article/pii/S266638992300051X). 
 <p align="center"><img src="figure.png" alt="drawing" width="450"/></p>
 
 ## Environment
