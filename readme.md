@@ -1,8 +1,8 @@
-# Molecular Regression Optimal Transport (MROT)
+# Molecular Regression Optimal Transport (Cell Patterns 2023)
 This is the repository for <em>Improving Molecular Representation Learning with Metric Learning-enhanced Optimal Transport [[arXiv](https://arxiv.org/abs/2202.06208)].</em>  
-We design an optimal-transport based algorithm to tackle the regression tasks in the molecular representation learning and 
+We design an optimal-transport-based algorithm to tackle the regression tasks in the molecular representation learning and 
 improve the generalization capability of deep learning models. This work is published at [*Patterns*](https://www.sciencedirect.com/science/article/pii/S266638992300051X). 
-<p align="center"><img src="figure.png" alt="drawing" width="450"/></p>
+<p align="center"><img src="model.png" alt="drawing" width="450"/></p>
 
 ## Environment
 pytorch >=  3.8.5  
@@ -31,17 +31,17 @@ Notebly, [ot.sinkhorn2](https://pythonot.github.io/all.html?highlight=ot%20sinkh
 This supports Pytorch and is more friendly to gradient propagation. 
 
 - [Sinkhorn-solver](https://gist.github.com/wohlert/8589045ab544082560cc5f8915cc90bd)  
-A convenient solver using Pytorch and the writer only provides visualizations.  
+A convenient solver using Pytorch, and the writer only provides visualizations.  
 
 - [OP meets ML](https://mathematical-coffees.github.io/mc01-ot/)  
 A great collection of OT resources. 
 
 *Awesome packages for implementing K-means clustering:*  
 - [kmeans_pytorch](https://github.com/subhadarship/kmeans_pytorch) (recommend)       
-It supports GPU usage of K-means with Pytorch.   
+It supports GPU usage of K-means with PyTorch.   
 - [KeOps](https://www.kernel-operations.io/keops/introduction/why_using_keops.html) 
-There is an excellent simple [implementation](https://www.kernel-operations.io/keops/_auto_tutorials/kmeans/plot_kmeans_torch.html)
- as well as its visualization of K-means algorithm. 
+There is an excellent, simple [implementation](https://www.kernel-operations.io/keops/_auto_tutorials/kmeans/plot_kmeans_torch.html)
+ as well as its visualization of the K-means algorithm. 
 
 *Awesome packages for implementing metric learning:*
 - [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning#readme) (recommend)  
@@ -50,7 +50,7 @@ It offers very straightforward and easy-to-understand APIs to plan a triplet los
 ## Dataset
 We examine our method across a wide range of benchmark datasets, including QM7/8/9, ESOL, FreeSolv, and Lipophilicity. Notably, 
 all datasets except the adsorption dataset are open-accessed and broadly used by the AI4SCIENCE community. The adsorption 
-dataset is newly collected and please cite our paper if you employ this database. 
+dataset is newly collected, and please cite our paper if you employ this database. 
 - **QM7**  
 Download (Official Website): `http://quantum-machine.org/datasets/ `  
 Download (DeepChem, *recommend*): `https://github.com/deepchem/deepchem/blob/master/deepchem/molnet/load_function/qm7_datasets.py#L30-L107`  
@@ -118,14 +118,17 @@ Proof of Gromov-Wasserstein Metric:
  [Paper](https://arxiv.org/pdf/1808.04337.pdf) 
 
 ## Cite and Contact
-Thanks for your time to review our code repo for MROT. If you have any sort of problems, please do not hesitate to reach out to the author `fw2359@columbia.edu`. 
+Thanks for your time to review our code repo for MROT. If you have any sort of problems, please do not hesitate to reach out to the author' `fangwu97@stanford.edu`. 
 We would be really appreciate it if you find our study beneficial and cite it!
 ```markdown
-@article{wu2022metric,
-  title={Metric Learning-enhanced Optimal Transport for Biochemical Regression Domain Adaptation},
-  author={Wu, Fang and Courty, Nicolas and Qiang, Zhang and Li, Ziqing and others},
-  journal={arXiv preprint arXiv:2202.06208},
-  year={2022}
+@article{wu2023improving,
+  title={Improving molecular representation learning with metric learning-enhanced optimal transport},
+  author={Wu, Fang and Courty, Nicolas and Jin, Shuting and Li, Stan Z},
+  journal={Patterns},
+  volume={4},
+  number={4},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
